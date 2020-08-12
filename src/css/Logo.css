@@ -1,0 +1,34 @@
+.logo {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo ul {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo ul li {
+  margin-left: 1rem;
+  list-style: none;
+  color: var(--primaryColor);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor:pointer;
+   transition: all ease-in-out 0.3s;
+
+}
+.logo ul li:hover {
+color: var(--secondAlternative);
+}
+
+.logo h2 {
+  color: var(--primaryColor);
+  font-family: "Roboto", " sans-serif";
+  font-weight: 500;
+  margin-left: 2rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}

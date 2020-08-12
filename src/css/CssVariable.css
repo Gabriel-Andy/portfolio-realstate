@@ -1,0 +1,19 @@
+ :root {
+  --primaryColor: #f69314;
+  --white: #fff;
+  --transparent: #transparent;
+  --darkwhite: #f2f2f2;
+  --secondBackgroundColor: #f8f8f8;
+  --thirdBackgroundColor: #111;
+  --lightGray: #d3d3d3;
+  --secondColor: #095ff0;
+  --color-grey-dark: #626366;
+  --secondAlternative: #003da5;
+  --color-grey-light: #c4c6c8;
+  --color-grey-lighter: #f4f4f4;
+  --color-grey-darker: #404041;
+  --letterSpacing: 1.25px;
+  --backgroundColorFooter: rgba(0, 0, 0, 0.9);
+  --mainTransition: all 0.3s linear;
+  --colorError: #e74c3c;
+}

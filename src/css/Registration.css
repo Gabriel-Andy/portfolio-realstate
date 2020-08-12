@@ -1,0 +1,207 @@
+section#registration {
+  /* overflow: hidden; */
+  position: absolute;
+  width: 23rem;
+  min-height: calc(100vh - 100px);
+  right: 0;
+  background-color: var(--lightGray);
+  margin: 0 auto;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.title {
+  visibility: visible;
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto 0;
+  width: 100%;
+  border-bottom: 2px solid var(--color-grey-light);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+h4.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  width: 50%;
+
+  font-size: 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+h4.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: 111;
+  width: 50%;
+  font-size: 1rem;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+}
+.show-title {
+  color: var(--secondColor);
+  border-bottom: 2px solid var(--secondColor);
+}
+.sub-title:hover {
+  border-bottom: 2px solid var(--secondColor);
+  color: var(--secondColor);
+}
+/* 
+/*  */
+.registration-form {
+  visibility: visible;
+}
+.registration-for {
+  visibility: visible;
+}
+div.wrapper {
+  padding: 0rem 2rem;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem auto;
+}
+.email label {
+  margin-bottom: 0.2rem;
+  font-size: 11px;
+  font-weight: 600;
+  color: #626366;
+  text-transform: uppercase;
+}
+.email input::placeholder {
+  font-size: 1rem;
+}
+.email input[type="text"] {
+  padding-left: 10px;
+}
+.email input {
+  height: 2rem;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.password label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #626366;
+  text-transform: uppercase;
+}
+.password input {
+  height: 2rem;
+}
+
+.password input::placeholder {
+  font-size: 1rem;
+}
+.password input[type="text"] {
+  padding-left: 10px;
+}
+.required-1 {
+  display: none;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+.required-2 {
+  display: none;
+  color: red;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+/*end of our nav-toggle*/
+form .rounded {
+  width: fit-content;
+  height: 1.8rem;
+  font-size: 0.7rem;
+  color: var(--white);
+  background-color: var(--secondColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.option {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+p.option span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  background-color: var(--lightGray);
+  z-index: 2;
+}
+p.option::after {
+  content: "";
+  border-bottom: 2px solid var(--color-grey-light);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+div.sign-up {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "roboto", "Arial", "Helvetica", "sans-serif";
+  font-weight: 500;
+  height: 2.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+div.facebook {
+  background-color: #4267b2;
+}
+div.facebook span {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+}
+div.facebook p {
+  margin-left: 10%;
+  width: 85%;
+}
+div.google {
+  background-color: #4285f4;
+}
+div.google span {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+}
+div.google p {
+  margin-left: 10%;
+  width: 85%;
+}
+.accept-policies {
+  font-size: 0.9rem;
+  letter-spacing: 0.7px;
+  font-family: "roboto";
+  font-weight: 400;
+}
+.accept-policies span {
+  color: #dc1c2e;
+}

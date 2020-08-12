@@ -1,0 +1,70 @@
+@import "./reset.css";
+@import "./CssVariable.css";
+@import "./Logo.css";
+@import "./NavBar.css";
+@import "./slider.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--darkwhite);
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+/* start global style*/
+.icon {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  /* line-height: 1;
+  margin-bottom: 0.5em; */
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  /* line-height: 1;
+  margin-bottom: 1em; */
+}
+h4 {
+  font-size: 1.2rem;
+  /* line-height: 1.25;
+  margin-bottom: 1.25em; */
+}
+h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  /* margin-bottom: 1.5em; */
+}
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  /* margin-bottom: 1.5em; */
+}
+/* end global style*/
+header {
+  /* position: relative; */
+  width: 100vw;
+}
+.container-nav {
+  width: 100%;
+  border-top: 4px solid var(--primaryColor);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: var(--white);
+}
+
+/* start of the overlay section*/
