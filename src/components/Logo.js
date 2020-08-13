@@ -1,10 +1,10 @@
 import React from "react";
 
 export default function Logo({ title }) {
-  const { investor, properties, agent, logo } = title;
+  const { investor, properties, agent,} = title;
   return (
     <>
-      <div className={logo}>
+      <div className="logo">
         <h2>{investor}</h2>
         <ul>
           <li>{properties}</li>

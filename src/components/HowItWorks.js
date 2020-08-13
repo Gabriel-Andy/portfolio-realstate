@@ -4,7 +4,7 @@ export default function HowItWorks() {
   return (
     <div>
       <section id="how-it-works">
-        <div class="get-started">
+        <div className="get-started">
           <ul>
             <li>
               <span>buy</span>

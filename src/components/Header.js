@@ -8,18 +8,25 @@ export default class Header extends Component {
     investor:"investor",
     properties:"properties",
     agent:"agent",
-    logo:"logo",
     search:"search",
     account:"account",
-    menu:"menu"
+    menu:"menu",
+    open:false
   };
+ 
+  handleSearch = ()=>{
+    console.log("I am developer")
+    this.setState({
+      open:!this.state.open
+    })
+  }
   render() {
     return (
       <>
         <header>
           <div className="container-nav">
             <Logo title={this.state} />
-            <NavBar title = {this.state} />
+            <NavBar title = {this.state} handleSearch = {this.handleSearch}   />
           </div>
         </header>
         <Slider />

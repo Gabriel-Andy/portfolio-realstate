@@ -2,10 +2,10 @@ import React from "react";
 import { FaSearch, FaUser, FaBars } from "react-icons/fa";
 
 export default function NavBar({ title }) {
-  const { search, account, menu } = title;
+  const { search, account, menu, handleSearch } = title;
   return (
     <nav className="nav-menu">
-      <ul data-tab="1">
+      <ul data-tab="1" onClick={() => handleSearch}>
         <li>
           <span>
             <FaSearch className="icon" />

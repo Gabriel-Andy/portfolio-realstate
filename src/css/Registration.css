@@ -1,7 +1,8 @@
 section#registration {
-  /* overflow: hidden; */
+  display:none;
+  overflow: hidden;
   position: absolute;
-  width: 23rem;
+  width: 0rem;
   min-height: calc(100vh - 100px);
   right: 0;
   background-color: var(--lightGray);

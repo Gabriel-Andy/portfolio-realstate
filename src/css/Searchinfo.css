@@ -2,13 +2,16 @@ section#search-info {
   visibility: visible;
   overflow: hidden;
   position: absolute;
-  width: 23rem;
+  width: 0rem;
   min-height: calc(100vh - 100px);
   right: 0;
   top: 100px;
   z-index: 2;
   background-color: var(--lightGray);
   transition: all 0.3s ease-in-out;
+}
+.openSlider {
+  width: 22rem;
 }
 div.search {
   position: relative;
