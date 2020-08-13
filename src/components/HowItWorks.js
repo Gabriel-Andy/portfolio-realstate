@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function HowItWorks() {
+export default function HowItWorks({title}) {
   return (
     <div>
-      <section id="how-it-works">
+      <section className={title.isOpen ? " how-it-works openSlider" : "how-it-works"}>
         <div className="get-started">
           <ul>
             <li>

@@ -11,25 +11,26 @@ export default class Header extends Component {
     search:"search",
     account:"account",
     menu:"menu",
-    open:false
+    isOpen:false
   };
  
-  handleSearch = ()=>{
-    console.log("I am developer")
-    this.setState({
-      open:!this.state.open
-    })
-  }
+handleToggle = (id)=>{
+  this.setState({
+    isOpen:!this.state.isOpen
+  },() =>{
+    console.log("I am a developer")
+  })
+}
   render() {
     return (
       <>
         <header>
           <div className="container-nav">
             <Logo title={this.state} />
-            <NavBar title = {this.state} handleSearch = {this.handleSearch}   />
+            <NavBar title = {this.state} handleSearch = {this.handleToggle}   />
           </div>
         </header>
-        <Slider />
+        <Slider title = {this.state} />
       </>
     );
   }

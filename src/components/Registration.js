@@ -1,9 +1,9 @@
 import React from "react";
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 
-export default function Registration() {
+export default function Registration({title}) {
   return (
-    <section id="registration">
+    <section className={title.isOpen ? " registration openSlider" : "registration"}>
       <div className="title">
         <h4 className="register sub-title show-title">register</h4>
         <h4 className="sign-in sub-title">sign in</h4>

@@ -1,19 +1,14 @@
-import React, {Component} from "react";
+import React from "react";
 import SearchInfo from "./SearchInfo";
 import HowItWorks from "./HowItWorks";
 import Registration from "./Registration";
 
-export default class Slider extends Component {
-  state = {
-    open:false
-  }
-  render() {
-    return (
-      <>
-        <SearchInfo />
-        <Registration />
-        <HowItWorks />
-      </>
-    );
-  }
+export default function Slider({title}) {
+  return (
+    <>
+      <SearchInfo title={title} />
+      <Registration title={title} />
+      <HowItWorks title={title} />
+    </>
+  );
 }

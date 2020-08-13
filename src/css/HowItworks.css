@@ -1,4 +1,4 @@
-section#how-it-works {
+.how-it-works {
   overflow: hidden;
   /* display: none; */
   position: absolute;
@@ -8,7 +8,10 @@ section#how-it-works {
   z-index: 2;
   top: 100px;
   background-color: var(--lightGray);
-  transition: all 0.3s ease-in-out;
+  transition:var(--mainTransition)
+}
+.openSlider {
+  width: 22rem;
 }
 .get-started {
   margin-top: 2rem;

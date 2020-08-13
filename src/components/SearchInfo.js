@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function SearchInfo() {
+export default function SearchInfo({ title }) {
+ 
   return (
-    <section id="search-info" >
+    <section className={title.isOpen ? " search-info openSlider" : "search-info"}>
       <div className="search">
         <input
           type="text"

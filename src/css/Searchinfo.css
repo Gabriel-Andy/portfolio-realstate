@@ -1,4 +1,4 @@
-section#search-info {
+.search-info {
   visibility: visible;
   overflow: hidden;
   position: absolute;
@@ -8,7 +8,8 @@ section#search-info {
   top: 100px;
   z-index: 2;
   background-color: var(--lightGray);
-  transition: all 0.3s ease-in-out;
+
+  transition:var(--mainTransition)
 }
 .openSlider {
   width: 22rem;
