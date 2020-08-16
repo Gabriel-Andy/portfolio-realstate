@@ -1,4 +1,5 @@
 .search-info {
+  display:block;
   visibility: visible;
   overflow: hidden;
   position: absolute;

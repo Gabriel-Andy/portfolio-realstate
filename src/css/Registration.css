@@ -1,14 +1,14 @@
 .registration {
-  display: block;
   overflow: hidden;
   position: absolute;
-  width:0rem;
+  width: 0rem;
   min-height: calc(100vh - 100px);
   right: 0;
   background-color: var(--lightGray);
+
   margin: 0 auto;
   z-index: 2;
-  transition:var(--mainTransition)
+  transition: var(--mainTransition);
 }
 .openSlider {
   width: 22rem;

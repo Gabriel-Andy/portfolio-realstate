@@ -3,12 +3,13 @@ import SearchInfo from "./SearchInfo";
 import HowItWorks from "./HowItWorks";
 import Registration from "./Registration";
 
-export default function Slider({title}) {
+export default function Slider({ title }) {
   return (
     <>
-      <SearchInfo title={title} />
-      <Registration title={title} />
       <HowItWorks title={title} />
+
+      <Registration title={title} />
+      <SearchInfo title={title} />
     </>
   );
 }

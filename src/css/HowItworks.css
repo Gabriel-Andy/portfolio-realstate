@@ -1,6 +1,6 @@
 .how-it-works {
-  overflow: hidden;
-  /* display: none; */
+  display:block;
+  /* overflow: hidden; */
   position: absolute;
   width: 0rem;
   min-height: calc(100vh - 100px);

@@ -2,36 +2,58 @@ import React, { Component } from "react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 import Slider from "./Slider";
+import uuid from "react-uuid";
+import { FaSearch, FaUser, FaBars, FaWindowClose } from "react-icons/fa";
 
 export default class Header extends Component {
   state = {
-    investor:"investor",
-    properties:"properties",
-    agent:"agent",
-    search:"search",
-    account:"account",
-    menu:"menu",
-    isOpen:false
+    logo: ["investor", "properties", "agent"],
+    isOpen: false,
+    navbar: [
+      {
+        name: "search",
+        id: uuid(),
+        icon: FaSearch,
+        defaultIcon: FaWindowClose,
+      },
+      {
+        name: "account",
+        id: uuid(),
+        icon: FaUser,
+        defaultIcon: FaWindowClose,
+      },
+      {
+        name: "menu",
+        id: uuid(),
+        icon: FaBars,
+        defaultIcon: FaWindowClose,
+      },
+    ],
   };
- 
-handleToggle = (id)=>{
-  this.setState({
-    isOpen:!this.state.isOpen
-  },() =>{
-    console.log("I am a developer")
-  })
-}
+
+  handleToggle = () => {
+    this.setState((prev) => {
+      return {
+        isOpen: !prev.isOpen,
+      };
+    });
+  };
+
   render() {
     return (
       <>
         <header>
           <div className="container-nav">
             <Logo title={this.state} />
-            <NavBar title = {this.state} handleSearch = {this.handleToggle}   />
-          </div>
+            <NavBar
+              title={this.state}
+              handleSearch={() => this.handleToggle(this.state.navbar.id)}
+            />
+          </div>     
         </header>
-        <Slider title = {this.state} />
+        <Slider title={this.state} />
       </>
     );
   }
 }
+
